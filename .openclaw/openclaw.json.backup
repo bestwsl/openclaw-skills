@@ -1,0 +1,190 @@
+{
+  "tools": {
+    "profile": "full",
+    "exec": {
+      "security": "full"
+    },
+    "alsoAllow": [
+      "feishu_bitable_app",
+      "feishu_bitable_app_table",
+      "feishu_bitable_app_table_field",
+      "feishu_bitable_app_table_record",
+      "feishu_bitable_app_table_view",
+      "feishu_calendar_calendar",
+      "feishu_calendar_event",
+      "feishu_calendar_event_attendee",
+      "feishu_calendar_freebusy",
+      "feishu_chat",
+      "feishu_chat_members",
+      "feishu_create_doc",
+      "feishu_doc_comments",
+      "feishu_doc_media",
+      "feishu_drive_file",
+      "feishu_fetch_doc",
+      "feishu_get_user",
+      "feishu_im_bot_image",
+      "feishu_im_user_fetch_resource",
+      "feishu_im_user_get_messages",
+      "feishu_im_user_get_thread_messages",
+      "feishu_im_user_message",
+      "feishu_im_user_search_messages",
+      "feishu_oauth",
+      "feishu_oauth_batch_auth",
+      "feishu_search_doc_wiki",
+      "feishu_search_user",
+      "feishu_sheet",
+      "feishu_task_comment",
+      "feishu_task_subtask",
+      "feishu_task_task",
+      "feishu_task_tasklist",
+      "feishu_update_doc",
+      "feishu_wiki_space",
+      "feishu_wiki_space_node"
+    ]
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.4.15",
+    "lastTouchedAt": "2026-04-28T11:23:01.419Z"
+  },
+  "gateway": {
+    "mode": "local",
+    "bind": "lan",
+    "auth": {
+      "mode": "token",
+      "token": "tenbox"
+    },
+    "controlUi": {
+      "allowInsecureAuth": true,
+      "dangerouslyDisableDeviceAuth": true,
+      "allowedOrigins": [
+        "*"
+      ]
+    },
+    "port": 18789,
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "models": {
+    "providers": {
+      "tenbox": {
+        "baseUrl": "http://10.0.2.3/v1",
+        "apiKey": "tenbox",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "default",
+            "name": "Default (TenBox Proxy)",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "contextWindow": 200000,
+            "maxTokens": 65536,
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          }
+        ]
+      }
+    },
+    "mode": "merge"
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "tenbox/default"
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "workspace": "/home/tenbox/.openclaw/workspace",
+      "models": {
+        "tenbox/default": {}
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "feishu": {
+        "enabled": false
+      },
+      "openclaw-lark": {
+        "enabled": true
+      },
+      "openclaw-weixin": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "openclaw-lark": {
+        "source": "archive",
+        "sourcePath": "/tmp/openclaw-lark-lYxBUU/larksuite-openclaw-lark-2026.4.8.tgz",
+        "installPath": "/home/tenbox/.openclaw/extensions/openclaw-lark",
+        "version": "2026.4.8",
+        "installedAt": "2026-04-28T11:07:14.068Z"
+      },
+      "openclaw-weixin": {
+        "source": "npm",
+        "spec": "@tencent-weixin/openclaw-weixin@latest",
+        "installPath": "/home/tenbox/.openclaw/extensions/openclaw-weixin",
+        "version": "2.1.10",
+        "resolvedName": "@tencent-weixin/openclaw-weixin",
+        "resolvedVersion": "2.1.10",
+        "resolvedSpec": "@tencent-weixin/openclaw-weixin@2.1.10",
+        "integrity": "sha512-cEG6Iw5g2qqlA+8/TcmV+E8aFUEX0ruxF0+a5LgVy5wv56/qP07KoapfRa7YTRPzhRW5UDaz6zsZQArt/4ZNnA==",
+        "shasum": "3e4fa19e5997567a6f8e0bacef8ec96d46cc432c",
+        "resolvedAt": "2026-04-28T11:20:38.691Z",
+        "installedAt": "2026-04-28T11:21:59.456Z"
+      }
+    },
+    "allow": [
+      "openclaw-lark",
+      "memory-core",
+      "openclaw-weixin"
+    ]
+  },
+  "channels": {
+    "feishu": {
+      "enabled": true,
+      "appId": "cli_a97a291392781bef",
+      "appSecret": {
+        "source": "file",
+        "provider": "lark-secrets",
+        "id": "/lark/appSecret"
+      },
+      "domain": "feishu",
+      "connectionMode": "websocket",
+      "requireMention": true,
+      "dmPolicy": "allowlist",
+      "allowFrom": [
+        "ou_4827ed9de30830a1c0e7fc4594c54d74"
+      ],
+      "groupAllowFrom": [
+        "ou_4827ed9de30830a1c0e7fc4594c54d74"
+      ],
+      "groupPolicy": "allowlist",
+      "groups": {
+        "*": {
+          "enabled": true
+        }
+      }
+    },
+    "openclaw-weixin": {
+      "channelConfigUpdatedAt": "2026-04-28T11:23:01.171Z"
+    }
+  },
+  "secrets": {
+    "providers": {
+      "lark-secrets": {
+        "source": "file",
+        "path": "~/.openclaw/credentials/lark.secrets.json"
+      }
+    }
+  }
+}
