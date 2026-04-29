@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-04-29 12:22
+# Hermes Agent Skills — 自动生成 2026-04-29 21:30
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -76,6 +76,7 @@
 | research-paper-writing | research | End-to-end pipeline for writing ML/AI research papers — from experiment design |
 | openhue | smart-home | Control Philips Hue lights, rooms, and scenes via the OpenHue CLI. Turn lights o |
 | xitter | social-media | Interact with X/Twitter via the x-cli terminal client using official X API crede |
+| document-extraction | software-development | Extract text from large PDFs and DOCX files by segmenting into chunks to avoid t |
 | plan | software-development | Plan mode for Hermes — inspect context, write a markdown plan into the active  |
 | requesting-code-review | software-development | > |
 | subagent-driven-development | software-development | Use when executing implementation plans with independent tasks. Dispatches fresh |
