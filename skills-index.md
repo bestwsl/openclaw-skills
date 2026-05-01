@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-04-29 21:30
+# Hermes Agent Skills — 自动生成 2026-05-01 21:30
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -68,6 +68,7 @@
 | notion | productivity | Notion API for creating and managing pages, databases, and blocks via curl. Sear |
 | ocr-and-documents | productivity | Extract text from PDFs and scanned documents. Use web_extract for remote URLs, p |
 | powerpoint | productivity | "Use this skill any time a .pptx file is involved in any way — as input, outpu |
+| python-docx-edit | productivity | Programmatically modify .docx files using python-docx — find & replace paragra |
 | godmode | red-teaming | "Jailbreak API-served LLMs using G0DM0D3 techniques — Parseltongue input obfus |
 | arxiv | research | Search and retrieve academic papers from arXiv using their free REST API. No API |
 | blogwatcher | research | Monitor blogs and RSS/Atom feeds for updates using the blogwatcher-cli tool. Add |
