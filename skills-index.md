@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-05-02 21:30
+# Hermes Agent Skills — 自动生成 2026-05-03 21:30
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -23,6 +23,7 @@
 | webhook-subscriptions | devops | Create and manage webhook subscriptions for event-driven agent activation. Use w |
 | dogfood | — | Systematic exploratory QA testing of web applications — find bugs, capture evi |
 | himalaya | email | CLI to manage emails via IMAP/SMTP. Use himalaya to list, read, write, reply, fo |
+| magnificent-seven-stock-report | finance | Generate daily Magnificent Seven stock report with prices and daily changes. Use |
 | minecraft-modpack-server | gaming | Set up a modded Minecraft server from a CurseForge/Modrinth server pack zip. Cov |
 | pokemon-player | gaming | Play Pokemon games autonomously via headless emulation. Starts a game server, re |
 | codebase-inspection | github | Inspect and analyze codebases using pygount for LOC counting, language breakdown |
