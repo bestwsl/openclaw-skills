@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-05-03 21:30
+# Hermes Agent Skills — 自动生成 2026-05-04 21:30
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -73,6 +73,7 @@
 | godmode | red-teaming | "Jailbreak API-served LLMs using G0DM0D3 techniques — Parseltongue input obfus |
 | arxiv | research | Search and retrieve academic papers from arXiv using their free REST API. No API |
 | blogwatcher | research | Monitor blogs and RSS/Atom feeds for updates using the blogwatcher-cli tool. Add |
+| daily-news-summary | research | >- |
 | llm-wiki | research | "Karpathy's LLM Wiki — build and maintain a persistent, interlinked markdown k |
 | polymarket | research | Query Polymarket prediction market data — search markets, get prices, orderboo |
 | research-paper-writing | research | End-to-end pipeline for writing ML/AI research papers — from experiment design |
