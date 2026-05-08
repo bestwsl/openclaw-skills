@@ -20,3 +20,5 @@ Check recent file writes and memory for context on "两份文件"
 2026-04-29 维修记录：reasoning_content 400 错误代码已修复，但 Gateway 进程未重启，导致旧代码仍在运行。通过 kill -TERM 优雅重启 Gateway（PID 521→17189），新代码生效。同时创建了每日 10:30 纳斯达克七姐妹涨跌播报定时任务。
 §
 圭哥触发 /repair 自我修复指令，需要全面诊断 Hermes Agent 状态。检查项：内存完整性、工具可用性、技能目录、近期错误、定时任务健康、GitHub 备份状态。
+§
+股票报告定时任务不能依赖AI模型知识（无搜索工具会编造数据），必须提供具体URL让浏览器访问新浪财经/Yahoo Finance获取实时数据，并在提示词中明确"不得编造任何数字"。
