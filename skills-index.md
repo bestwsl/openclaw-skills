@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-05-10 21:31
+# Hermes Agent Skills — 自动生成 2026-05-11 21:30
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -25,6 +25,7 @@
 | himalaya | email | CLI to manage emails via IMAP/SMTP. Use himalaya to list, read, write, reply, fo |
 | china-stock-closing-report | finance | Generate a daily closing market summary for A-shares (上证指数, 沪深300, � |
 | magnificent-seven-stock-report | finance | Generate daily Magnificent Seven stock report with prices and daily changes. Use |
+| sina-finance-real-time | finance | Fetch real-time Chinese stock index data from Sina Finance. Covers A-share indic |
 | minecraft-modpack-server | gaming | Set up a modded Minecraft server from a CurseForge/Modrinth server pack zip. Cov |
 | pokemon-player | gaming | Play Pokemon games autonomously via headless emulation. Starts a game server, re |
 | codebase-inspection | github | Inspect and analyze codebases using pygount for LOC counting, language breakdown |
@@ -41,6 +42,7 @@
 | heartmula | media | Set up and run HeartMuLa, the open-source music generation model family (Suno-li |
 | songsee | media | Generate spectrograms and audio feature visualizations (mel, chroma, MFCC, tempo |
 | youtube-content | media | > |
+| 9router-ai-coding-router | mlops | Free AI Router & Token Saver — connect AI coding tools (Claude Code, Codex, Cu |
 | modal | cloud | Serverless GPU cloud platform for running ML workloads. Use when you need on-dem |
 | lm-evaluation-harness | evaluation | Evaluates LLMs across 60+ academic benchmarks (MMLU, HumanEval, GSM8K, TruthfulQ |
 | weights-and-biases | evaluation | Track ML experiments with automatic logging, visualize training in real-time, op |
@@ -70,6 +72,7 @@
 | notion | productivity | Notion API for creating and managing pages, databases, and blocks via curl. Sear |
 | ocr-and-documents | productivity | Extract text from PDFs and scanned documents. Use web_extract for remote URLs, p |
 | powerpoint | productivity | "Use this skill any time a .pptx file is involved in any way — as input, outpu |
+| ppt-master | productivity | AI generates natively editable PPTX from any document — real PowerPoint shapes |
 | python-docx-edit | productivity | Programmatically modify .docx files using python-docx — find & replace paragra |
 | godmode | red-teaming | "Jailbreak API-served LLMs using G0DM0D3 techniques — Parseltongue input obfus |
 | arxiv | research | Search and retrieve academic papers from arXiv using their free REST API. No API |
@@ -80,6 +83,7 @@
 | research-paper-writing | research | End-to-end pipeline for writing ML/AI research papers — from experiment design |
 | openhue | smart-home | Control Philips Hue lights, rooms, and scenes via the OpenHue CLI. Turn lights o |
 | xitter | social-media | Interact with X/Twitter via the x-cli terminal client using official X API crede |
+| addyosmani-agent-skills | software-development | Production-grade engineering skills for AI coding agents — 22 structured workf |
 | document-extraction | software-development | Extract text from large PDFs and DOCX files by segmenting into chunks to avoid t |
 | plan | software-development | Plan mode for Hermes — inspect context, write a markdown plan into the active  |
 | requesting-code-review | software-development | > |
