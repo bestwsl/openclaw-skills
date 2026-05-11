@@ -22,3 +22,5 @@ Check recent file writes and memory for context on "两份文件"
 圭哥触发 /repair 自我修复指令，需要全面诊断 Hermes Agent 状态。检查项：内存完整性、工具可用性、技能目录、近期错误、定时任务健康、GitHub 备份状态。
 §
 股票报告定时任务不能依赖AI模型知识（无搜索工具会编造数据），必须提供具体URL让浏览器访问新浪财经/Yahoo Finance获取实时数据，并在提示词中明确"不得编造任何数字"。
+§
+每天17:00 GitHub学习新技能后，必须将新创建的 skill 推送到 GitHub 仓库 (https://github.com/bestwsl/openclaw-skills)。使用 github-api-push skill 进行推送（因大陆 git push 不稳定）。更新 cron job prompt 增加此步骤。
