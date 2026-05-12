@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-05-12 17:56
+# Hermes Agent Skills — 自动生成 2026-05-12 21:30
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -74,6 +74,7 @@
 | powerpoint | productivity | "Use this skill any time a .pptx file is involved in any way — as input, outpu |
 | ppt-master | productivity | AI generates natively editable PPTX from any document — real PowerPoint shapes |
 | python-docx-edit | productivity | Programmatically modify .docx files using python-docx — find & replace paragra |
+| thesis-defense-ppt | productivity | Generate thesis defense PPT from DOCX thesis — reads content without python-do |
 | godmode | red-teaming | "Jailbreak API-served LLMs using G0DM0D3 techniques — Parseltongue input obfus |
 | arxiv | research | Search and retrieve academic papers from arXiv using their free REST API. No API |
 | blogwatcher | research | Monitor blogs and RSS/Atom feeds for updates using the blogwatcher-cli tool. Add |
