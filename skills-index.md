@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-05-12 21:30
+# Hermes Agent Skills — 自动生成 2026-05-12 23:46
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -20,6 +20,7 @@
 | popular-web-designs | creative | > |
 | songwriting-and-ai-music | creative | > |
 | jupyter-live-kernel | data-science | > |
+| cron-content-series | devops | Deliver multi-day content series via cron jobs with state-tracking Python script |
 | webhook-subscriptions | devops | Create and manage webhook subscriptions for event-driven agent activation. Use w |
 | dogfood | — | Systematic exploratory QA testing of web applications — find bugs, capture evi |
 | himalaya | email | CLI to manage emails via IMAP/SMTP. Use himalaya to list, read, write, reply, fo |
