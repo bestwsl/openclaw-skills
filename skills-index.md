@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-05-11 21:30
+# Hermes Agent Skills — 自动生成 2026-05-12 17:56
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -86,6 +86,7 @@
 | addyosmani-agent-skills | software-development | Production-grade engineering skills for AI coding agents — 22 structured workf |
 | document-extraction | software-development | Extract text from large PDFs and DOCX files by segmenting into chunks to avoid t |
 | plan | software-development | Plan mode for Hermes — inspect context, write a markdown plan into the active  |
+| react-doctor | software-development | Scan your React/Next.js codebase with one command for AI-generated bad code —  |
 | requesting-code-review | software-development | > |
 | subagent-driven-development | software-development | Use when executing implementation plans with independent tasks. Dispatches fresh |
 | systematic-debugging | software-development | Use when encountering any bug, test failure, or unexpected behavior. 4-phase roo |
