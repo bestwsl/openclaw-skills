@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-05-12 23:46
+# Hermes Agent Skills — 自动生成 2026-05-13 17:04
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -39,11 +39,13 @@
 | find-nearby | leisure | Find nearby places (restaurants, cafes, bars, pharmacies, etc.) using OpenStreet |
 | mcporter | mcp | Use the mcporter CLI to list, configure, auth, and call MCP servers/tools direct |
 | native-mcp | mcp | Built-in MCP (Model Context Protocol) client that connects to external MCP serve |
+| douyin-watermark-removal | media | Download Douyin (抖音) videos and images without watermarks. Handle short URLs |
 | gif-search | media | Search and download GIFs from Tenor using curl. No dependencies beyond curl and  |
 | heartmula | media | Set up and run HeartMuLa, the open-source music generation model family (Suno-li |
 | songsee | media | Generate spectrograms and audio feature visualizations (mel, chroma, MFCC, tempo |
 | youtube-content | media | > |
 | 9router-ai-coding-router | mlops | Free AI Router & Token Saver — connect AI coding tools (Claude Code, Codex, Cu |
+| agentmemory | mlops |  |
 | modal | cloud | Serverless GPU cloud platform for running ML workloads. Use when you need on-dem |
 | lm-evaluation-harness | evaluation | Evaluates LLMs across 60+ academic benchmarks (MMLU, HumanEval, GSM8K, TruthfulQ |
 | weights-and-biases | evaluation | Track ML experiments with automatic logging, visualize training in real-time, op |
