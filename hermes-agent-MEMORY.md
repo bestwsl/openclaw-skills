@@ -26,3 +26,5 @@ Check recent file writes and memory for context on "两份文件"
 每天17:00 GitHub学习新技能后，必须将新创建的 skill 推送到 GitHub 仓库 (https://github.com/bestwsl/openclaw-skills)。使用 github-api-push skill 进行推送（因大陆 git push 不稳定）。更新 cron job prompt 增加此步骤。
 §
 移远通信产品系列介绍定时任务：每天12:00发一个系列，共10天。顺序：5G→4G/LTE→LPWA→智能→车载→GNSS→短距离→天线→卫星通信→3G/2G。脚本 ~/.hermes/scripts/quectel_tracker.py 管理进度。
+§
+股票颜色惯例（中国股市）：涨用🔴红，跌用🟢绿。与美股相反。所有股票/指数报告都按此规则使用 emoji。
