@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-05-14 21:30
+# Hermes Agent Skills — 自动生成 2026-05-15 21:30
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -21,6 +21,7 @@
 | songwriting-and-ai-music | creative | > |
 | jupyter-live-kernel | data-science | > |
 | cron-content-series | devops | Deliver multi-day content series via cron jobs with state-tracking Python script |
+| quectel-product-scrape | devops | Scrape product data from Quectel's Chinese website (www.quectel.com.cn) includin |
 | webhook-subscriptions | devops | Create and manage webhook subscriptions for event-driven agent activation. Use w |
 | dogfood | — | Systematic exploratory QA testing of web applications — find bugs, capture evi |
 | himalaya | email | CLI to manage emails via IMAP/SMTP. Use himalaya to list, read, write, reply, fo |
@@ -62,6 +63,7 @@
 | stable-diffusion | models | State-of-the-art text-to-image generation with Stable Diffusion models via Huggi |
 | whisper | models | OpenAI's general-purpose speech recognition model. Supports 99 languages, transc |
 | dspy | research | Build complex AI systems with declarative programming, optimize prompts automati |
+| supertonic-tts | mlops | "Supertonic — Lightning Fast, On-Device, Multilingual TTS. ONNX Runtime based  |
 | axolotl | training | Expert guidance for fine-tuning LLMs with Axolotl - YAML configs, 100+ models, L |
 | grpo-rl-training | training | Expert guidance for GRPO/RL fine-tuning with TRL for reasoning and task-specific |
 | peft | training | Parameter-efficient fine-tuning for LLMs using LoRA, QLoRA, and 25+ methods. Use |
@@ -88,7 +90,7 @@
 | openhue | smart-home | Control Philips Hue lights, rooms, and scenes via the OpenHue CLI. Turn lights o |
 | xitter | social-media | Interact with X/Twitter via the x-cli terminal client using official X API crede |
 | addyosmani-agent-skills | software-development | Production-grade engineering skills for AI coding agents — 22 structured workf |
-| document-extraction | software-development | Extract text from large PDFs and DOCX files by segmenting into chunks to avoid t |
+| document-extraction | software-development | Extract and edit text from PDFs and DOCX files — including when python-docx/py |
 | plan | software-development | Plan mode for Hermes — inspect context, write a markdown plan into the active  |
 | react-doctor | software-development | Scan React/Next.js codebases for AI-generated bad code — one command gives a 0 |
 | requesting-code-review | software-development | > |
