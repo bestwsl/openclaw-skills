@@ -1,7 +1,8 @@
-# Hermes Agent Skills — 自动生成 2026-05-15 21:30
+# Hermes Agent Skills — 自动生成 2026-05-16 17:09
 
 | Skill | Category | Description |
 |-------|----------|-------------|
+| n8n-mcp | ai-agents | MCP server that gives AI assistants (Claude, Cursor, Windsurf, Codex) comprehens |
 | apple-notes | apple | Manage Apple Notes via the memo CLI on macOS (create, view, search, edit). |
 | apple-reminders | apple | Manage Apple Reminders via remindctl CLI (list, add, complete, delete). |
 | findmy | apple | Track Apple devices and AirTags via FindMy.app on macOS using AppleScript and sc |
@@ -21,6 +22,7 @@
 | songwriting-and-ai-music | creative | > |
 | jupyter-live-kernel | data-science | > |
 | cron-content-series | devops | Deliver multi-day content series via cron jobs with state-tracking Python script |
+| cron-delivery-debugging | devops | Debug cron job delivery failures on Hermes Agent — when tasks execute but don' |
 | quectel-product-scrape | devops | Scrape product data from Quectel's Chinese website (www.quectel.com.cn) includin |
 | webhook-subscriptions | devops | Create and manage webhook subscriptions for event-driven agent activation. Use w |
 | dogfood | — | Systematic exploratory QA testing of web applications — find bugs, capture evi |
