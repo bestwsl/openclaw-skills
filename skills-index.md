@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-05-16 21:30
+# Hermes Agent Skills — 自动生成 2026-05-17 21:30
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -92,6 +92,7 @@
 | openhue | smart-home | Control Philips Hue lights, rooms, and scenes via the OpenHue CLI. Turn lights o |
 | xitter | social-media | Interact with X/Twitter via the x-cli terminal client using official X API crede |
 | addyosmani-agent-skills | software-development | Production-grade engineering skills for AI coding agents — 22 structured workf |
+| codegraph | software-development | Supercharge AI coding agents with a pre-indexed knowledge graph — symbol relat |
 | document-extraction | software-development | Extract and edit text from PDFs and DOCX files — including when python-docx/py |
 | plan | software-development | Plan mode for Hermes — inspect context, write a markdown plan into the active  |
 | react-doctor | software-development | Scan React/Next.js codebases for AI-generated bad code — one command gives a 0 |
