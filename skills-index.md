@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-05-17 21:30
+# Hermes Agent Skills — 自动生成 2026-05-18 21:30
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -101,3 +101,4 @@
 | systematic-debugging | software-development | Use when encountering any bug, test failure, or unexpected behavior. 4-phase roo |
 | test-driven-development | software-development | Use when implementing any feature or bugfix, before writing implementation code. |
 | writing-plans | software-development | Use when you have a spec or requirements for a multi-step task. Creates comprehe |
+| zero-language | software-development | Zero - Vercel Labs 出品的专为 AI Agent 设计的系统编程语言，具有 |
