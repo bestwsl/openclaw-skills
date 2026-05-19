@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-05-19 17:03
+# Hermes Agent Skills — 自动生成 2026-05-19 21:30
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -40,6 +40,7 @@
 | github-issues | github | Create, manage, triage, and close GitHub issues. Search existing issues, add lab |
 | github-pr-workflow | github | Full pull request lifecycle — create branches, commit changes, open PRs, monit |
 | github-repo-management | github | Clone, create, fork, configure, and manage GitHub repositories. Manage remotes,  |
+| github-trending-skill-push | — | "Daily workflow: find trending GitHub projects via API when github.com is blocke |
 | find-nearby | leisure | Find nearby places (restaurants, cafes, bars, pharmacies, etc.) using OpenStreet |
 | mcporter | mcp | Use the mcporter CLI to list, configure, auth, and call MCP servers/tools direct |
 | native-mcp | mcp | Built-in MCP (Model Context Protocol) client that connects to external MCP serve |
