@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-05-18 21:30
+# Hermes Agent Skills — 自动生成 2026-05-19 17:03
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -11,6 +11,7 @@
 | codex | autonomous-ai-agents | Delegate coding tasks to OpenAI Codex CLI agent. Use for building features, refa |
 | hermes-agent | autonomous-ai-agents | Complete guide to using and extending Hermes Agent — CLI usage, setup, configu |
 | opencode | autonomous-ai-agents | Delegate coding tasks to OpenCode CLI agent for feature implementation, refactor |
+| smallcode | autonomous-ai-agents | AI coding agent optimized for small LLMs (7B-20B parameters). Terminal-native, c |
 | architecture-diagram | creative | Generate professional dark-themed system architecture diagrams as standalone HTM |
 | ascii-art | creative | Generate ASCII art using pyfiglet (571 fonts), cowsay, boxes, toilet, image-to-a |
 | ascii-video | creative | "Production pipeline for ASCII art video — any format. Converts video/audio/im |
