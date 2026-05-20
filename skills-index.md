@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-05-20 17:03
+# Hermes Agent Skills — 自动生成 2026-05-20 21:30
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -22,6 +22,7 @@
 | popular-web-designs | creative | > |
 | songwriting-and-ai-music | creative | > |
 | jupyter-live-kernel | data-science | > |
+| auto-identity-remove | devops | "Automated data broker opt-out runner - removes personal info from 500+ people-s |
 | cron-content-series | devops | Deliver multi-day content series via cron jobs with state-tracking Python script |
 | cron-delivery-debugging | devops | Debug cron job delivery failures on Hermes Agent — when tasks execute but don' |
 | quectel-product-scrape | devops | Scrape product data from Quectel's Chinese website (www.quectel.com.cn) includin |
