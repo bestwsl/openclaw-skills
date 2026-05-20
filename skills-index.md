@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-05-20 21:30
+# Hermes Agent Skills — 自动生成 2026-05-21 01:51
 
 | Skill | Category | Description |
 |-------|----------|-------------|
