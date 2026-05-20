@@ -28,3 +28,9 @@ Check recent file writes and memory for context on "两份文件"
 移远通信产品系列介绍定时任务：每天12:00发一个系列，共10天。顺序：5G→4G/LTE→LPWA→智能→车载→GNSS→短距离→天线→卫星通信→3G/2G。脚本 ~/.hermes/scripts/quectel_tracker.py 管理进度。
 §
 股票颜色惯例（中国股市）：涨用🔴红，跌用🟢绿。与美股相反。所有股票/指数报告都按此规则使用 emoji。
+§
+圭哥的个人学习提升计划已建好定时任务：
+1. 📡 移远技术支持知识（10期）— 每天11:00学习 + 20:00复习
+2. 🐍 Python/自动化技能（8期）— 每周二/四15:00学习 + 20:00练习
+3. 🤖 AI工具提效（8期）— 每周三/六15:00学习 + 20:00练习
+所有任务都推送到微信 origin。脚本位置：~/.hermes/scripts/{quectel_knowledge_tracker, python_skills_tracker, ai_tools_tracker}.py
