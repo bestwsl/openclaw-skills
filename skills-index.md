@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-05-21 22:33
+# Hermes Agent Skills — 自动生成 2026-05-22 21:30
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -49,6 +49,7 @@
 | gif-search | media | Search and download GIFs from Tenor using curl. No dependencies beyond curl and  |
 | heartmula | media | Set up and run HeartMuLa, the open-source music generation model family (Suno-li |
 | songsee | media | Generate spectrograms and audio feature visualizations (mel, chroma, MFCC, tempo |
+| yapsnap | media | Snap any video URL or audio file into plaintext. No GPU. No cloud. One command.  |
 | youtube-content | media | > |
 | 9router-ai-coding-router | mlops | Free AI Router & Token Saver — connect AI coding tools (Claude Code, Codex, Cu |
 | agentmemory | mlops |  |
