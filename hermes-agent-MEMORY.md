@@ -37,4 +37,6 @@ Check recent file writes and memory for context on "两份文件"
 §
 论文修改和答辩PPT任务已完结，用户不再需要。移除"圭哥正在修改论文"相关记忆。毕业论文答辩_吴森浪.pptx 和 吴森浪2_修改版.docx 不再需要处理。
 §
-GitHub PAT token (ghp_jIf...) 已失效 (401 Bad credentials)，无法推送到 bestwsl/openclaw-skills。需要圭哥重新生成 token 才能恢复 GitHub 备份。
+GitHub PAT token 已更新（2026-06-21），备份脚本 backup-brain.sh 中的 token 已替换为新 token。每日自动备份到 bestwsl/openclaw-skills 功能正常。
+§
+每日新闻推送已精简为三板块：经济🌍 + 政治🏛️ + 科技🔬（去掉了战争板块）。每天20:00推送。
