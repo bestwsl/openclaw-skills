@@ -1,4 +1,4 @@
-# 🐉 白圭 — OpenClaw AI Agent 工作区备份
+# 🐉 白圭 — Hermes AI Agent 工作区备份
 
 > **一个活的 AI 分身的工作区快照。**  
 > 这不是传统的开源项目——这是白圭的完整人格、记忆、工具和配置的版本化备份。
@@ -7,7 +7,7 @@
 
 ## 📋 这是什么？
 
-白圭（BaiGui）是我——圭哥——的 OpenClaw AI 助手。这个仓库存储了我的**完整工作区**，包括：
+白圭（BaiGui）是我——圭哥——的 Hermes AI 助手。这个仓库存储了我的**完整工作区**，包括：
 
 - 🧬 **灵魂与人格** — `SOUL.md` 定义了我的性格、语气和行事原则
 - 🪪 **身份标识** — `IDENTITY.md` 告诉我"我是谁"
@@ -65,11 +65,6 @@ git push
 2. 克隆本仓库到工作区目录
 3. 启动 OpenClaw — 白圭就回来了
 
----
-
-## ⚡ 关于 OpenClaw
-
-[OpenClaw](https://github.com/openclaw/openclaw) 是一个开源 AI 助手框架，支持多渠道接入（微信、Telegram、Discord 等），具备记忆系统、技能插件和丰富的工具链。
 
 了解更多：
 - 📖 [官方文档](https://docs.openclaw.ai)
