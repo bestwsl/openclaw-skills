@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-06-21 11:13
+# Hermes Agent Skills — 自动生成 2026-06-21 21:31
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -9,6 +9,7 @@
 | imessage | apple | Send and receive iMessages/SMS via the imsg CLI on macOS. |
 | claude-code | autonomous-ai-agents | Delegate coding tasks to Claude Code (Anthropic's CLI agent). Use for building f |
 | codex | autonomous-ai-agents | Delegate coding tasks to OpenAI Codex CLI agent. Use for building features, refa |
+| github-headroom | autonomous-ai-agents | "Headroom compresses tool outputs, logs, files, and RAG chunks before they reach |
 | hermes-agent | autonomous-ai-agents | Complete guide to using and extending Hermes Agent — CLI usage, setup, configu |
 | opencode | autonomous-ai-agents | Delegate coding tasks to OpenCode CLI agent for feature implementation, refactor |
 | smallcode | autonomous-ai-agents | AI coding agent optimized for small LLMs (7B-20B parameters). Terminal-native, c |
@@ -33,6 +34,7 @@
 | himalaya | email | CLI to manage emails via IMAP/SMTP. Use himalaya to list, read, write, reply, fo |
 | china-stock-closing-report | finance | Generate a daily closing market summary for A-shares (上证指数, 沪深300, � |
 | financial-literacy | finance | 融合《小狗钱钱》和《彼得·林奇的成功投资》两本经典的理 |
+| investool | finance | InvesTool — Golang实现的全方位A股基本面选股与基金筛选工具� |
 | magnificent-seven-stock-report | finance | Generate daily Magnificent Seven stock report with prices and daily changes. Use |
 | sina-finance-real-time | finance | Fetch real-time Chinese stock index data from Sina Finance. Covers A-share indic |
 | minecraft-modpack-server | gaming | Set up a modded Minecraft server from a CurseForge/Modrinth server pack zip. Cov |
