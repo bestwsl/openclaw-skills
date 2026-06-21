@@ -34,3 +34,7 @@ Check recent file writes and memory for context on "两份文件"
 2. 🐍 Python/自动化技能（8期）— 每周二/四15:00学习 + 20:00练习
 3. 🤖 AI工具提效（8期）— 每周三/六15:00学习 + 20:00练习
 所有任务都推送到微信 origin。脚本位置：~/.hermes/scripts/{quectel_knowledge_tracker, python_skills_tracker, ai_tools_tracker}.py
+§
+论文修改和答辩PPT任务已完结，用户不再需要。移除"圭哥正在修改论文"相关记忆。毕业论文答辩_吴森浪.pptx 和 吴森浪2_修改版.docx 不再需要处理。
+§
+GitHub PAT token (ghp_jIf...) 已失效 (401 Bad credentials)，无法推送到 bestwsl/openclaw-skills。需要圭哥重新生成 token 才能恢复 GitHub 备份。
