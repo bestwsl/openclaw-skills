@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-05-22 21:30
+# Hermes Agent Skills — 自动生成 2026-06-21 11:13
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -25,16 +25,20 @@
 | auto-identity-remove | devops | "Automated data broker opt-out runner - removes personal info from 500+ people-s |
 | cron-content-series | devops | Deliver multi-day content series via cron jobs with state-tracking Python script |
 | cron-delivery-debugging | devops | Debug cron job delivery failures on Hermes Agent — when tasks execute but don' |
+| cron-job-recovery | devops | Recover accidentally deleted cron jobs by reconstructing them from session histo |
+| deploy-python-ai-project-nodocker | devops | Deploy complex Python/AI projects from GitHub in environments without Docker. Co |
 | quectel-product-scrape | devops | Scrape product data from Quectel's Chinese website (www.quectel.com.cn) includin |
 | webhook-subscriptions | devops | Create and manage webhook subscriptions for event-driven agent activation. Use w |
 | dogfood | — | Systematic exploratory QA testing of web applications — find bugs, capture evi |
 | himalaya | email | CLI to manage emails via IMAP/SMTP. Use himalaya to list, read, write, reply, fo |
 | china-stock-closing-report | finance | Generate a daily closing market summary for A-shares (上证指数, 沪深300, � |
+| financial-literacy | finance | 融合《小狗钱钱》和《彼得·林奇的成功投资》两本经典的理 |
 | magnificent-seven-stock-report | finance | Generate daily Magnificent Seven stock report with prices and daily changes. Use |
 | sina-finance-real-time | finance | Fetch real-time Chinese stock index data from Sina Finance. Covers A-share indic |
 | minecraft-modpack-server | gaming | Set up a modded Minecraft server from a CurseForge/Modrinth server pack zip. Cov |
 | pokemon-player | gaming | Play Pokemon games autonomously via headless emulation. Starts a game server, re |
 | codebase-inspection | github | Inspect and analyze codebases using pygount for LOC counting, language breakdown |
+| github-agent-apprenticeship | github | "Learn and use Agent Apprenticeship: the open ecosystem where AI agents (Claude  |
 | github-api-push | github | Push files to GitHub when git push fails due to network restrictions (common in  |
 | github-auth | github | Set up GitHub authentication for the agent using git (universally available) or  |
 | github-code-review | github | Review code changes by analyzing git diffs, leaving inline comments on PRs, and  |
