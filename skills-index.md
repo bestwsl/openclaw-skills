@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-06-27 21:30
+# Hermes Agent Skills — 自动生成 2026-06-28 21:33
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -35,7 +35,6 @@
 | china-stock-closing-report | finance | Generate a daily closing market summary for A-shares (上证指数, 沪深300, � |
 | financial-literacy | finance | 融合《小狗钱钱》和《彼得·林奇的成功投资》两本经典的理 |
 | investool | finance | InvesTool — Golang实现的全方位A股基本面选股与基金筛选工具� |
-| magnificent-seven-stock-report | finance | Generate daily Magnificent Seven stock report with prices and daily changes. Use |
 | sina-finance-real-time | finance | Fetch real-time Chinese stock index data from Sina Finance. Covers A-share indic |
 | minecraft-modpack-server | gaming | Set up a modded Minecraft server from a CurseForge/Modrinth server pack zip. Cov |
 | pokemon-player | gaming | Play Pokemon games autonomously via headless emulation. Starts a game server, re |
