@@ -1,4 +1,4 @@
-# Hermes Agent Skills — 自动生成 2026-07-26 18:17
+# Hermes Agent Skills — 自动生成 2026-07-26 20:31
 
 | Skill | Category | Description |
 |-------|----------|-------------|
@@ -13,7 +13,7 @@
 | hermes-agent | autonomous-ai-agents | Complete guide to using and extending Hermes Agent — CLI usage, setup, configu |
 | opencode | autonomous-ai-agents | Delegate coding tasks to OpenCode CLI agent for feature implementation, refactor |
 | smallcode | autonomous-ai-agents | AI coding agent optimized for small LLMs (7B-20B parameters). Terminal-native, c |
-| architecture-diagram | creative | Generate professional dark-themed system architecture diagrams as standalone HTM |
+| architecture-diagram | creative | Generate dark-themed SVG diagrams of software systems and cloud infrastructure a |
 | ascii-art | creative | Generate ASCII art using pyfiglet (571 fonts), cowsay, boxes, toilet, image-to-a |
 | ascii-video | creative | "Production pipeline for ASCII art video — any format. Converts video/audio/im |
 | creative-ideation | creative | "Generate project ideas through creative constraints. Use when the user says 'I  |
