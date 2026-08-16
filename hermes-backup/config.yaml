@@ -3,3 +3,6 @@ display:
 providers:
   deepseek:
     api_key_env: DEEPSEEK_API_KEY
+curator:
+  backup:
+    enabled: false
