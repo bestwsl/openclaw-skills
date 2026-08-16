@@ -30,6 +30,7 @@ creative/songwriting-and-ai-music
 creative/touchdesigner-mcp
 devops/auto-identity-remove
 devops/github-trending-skill-push
+devops/nodejs-windows-setup
 email/himalaya
 finance/a-share-data-api
 finance/ashare-fundamental-screening
