@@ -8,7 +8,7 @@ WorkBuddy 沙箱环境：所有删除操作被拦截（回收站不可用，rm/r
 §
 Hermes cron 约束：script 必须放在 ~/.hermes/scripts/ 下并用相对文件名；桌面会话默认 deliver=local（输出只保存不投递），需要投递必须显式 deliver='all'。
 §
-微信已接入 Hermes（腾讯 iLink Bot API）：bot account 4916a2f2e4e7@im.bot，圭哥微信 ID o9cq8023zYlNSdjbM6GdIH6pDn58@im.wechat（已配对批准），私聊 pairing 模式、群聊禁用；网关为手动运行，电脑重启后需 hermes gateway run 或 hermes gateway install 设置自启。
+微信已接入 Hermes（腾讯 iLink Bot API）：bot account 4916a2f2e4e7@im.bot，圭哥微信 ID o9cq8023zYlNSdjbM6GdIH6pDn58@im.wechat（已配对批准），私聊 pairing 模式、群聊禁用；网关已装 Startup folder 自启（2026-09-05，UAC 跳过未用 Scheduled Task）：C:\Users\白圭\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Hermes_Gateway.vbs → D:\Hermes\gateway-service\Hermes_Gateway.cmd，Windows 登录时自动拉起，失联先查 hermes gateway status。
 §
 WorkBuddy 沙箱：从 Hermes 启动的进程无法向用户级 GUI 应用注入键鼠（Windows UIPI 拦 SendKeys/PostMessage/SendInput/keybd_event/VBScript），桌面自动化需 computer-use(cua-driver) 或用户手动操作。网易云音乐在 D:\app\CloudMusic\cloudmusic.exe（窗口类 OrpheusBrowserHost），圭哥常让播"我喜欢的音乐"歌单。
 §
