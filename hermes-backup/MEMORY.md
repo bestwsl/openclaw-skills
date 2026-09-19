@@ -14,6 +14,4 @@ WorkBuddy 沙箱：从 Hermes 启动的进程无法向用户级 GUI 应用注入
 §
 圭哥明确要求：个股分析必须核查最新季度数据（Q1/中报），不能只看滞后年报。2026年曾因只看2025年报推荐了2026Q1已净利转负的股票（映翰通-58%、福耀-16%）被纠正。规则已固化到 a-share-data-api skill。
 §
-本机 Node 双版本：系统 PATH 的 Program Files\nodejs 是旧 v20.11.0（优先于用户 PATH），绿色版 v24.19.0 在 D:\app\nodejs。dsh 已全局装，需 Node≥20.12。修 PATH 优先级通用招：把新版 node.exe 复制到 AppData\Roaming\npm\（dsh.cmd 的 %dp0%\node.exe、bash shim 的 $basedir/node 都优先用它），无需管理员。教训：非管理员 msiexec 装 per-machine MSI 报 exit 103；winget 下 nodejs.org 超时，用 npmmirror.com/mirrors/node 镜像。
-§
-dsh-plugin-vetting@0.5.1 上游 bug：lib/index.js 正则 /proc 未转义致 "Invalid regular expression flags" 启动崩溃；本地 patch 加 \ 可修，插件重装会覆盖需重打。
+本机 Node 只有系统版 v20.11.0（Program Files\nodejs）。注意：Windows 系统 PATH 优先于用户 PATH，往用户 PATH 加新版 node 盖不住系统旧版——免管理员升级招：把新版 node.exe 复制到 AppData\Roaming\npm\，npm 生成的 .cmd shim 用 %dp0%\node.exe、bash shim 用 $basedir/node，都优先它。大陆网络装 Node 用 npmmirror.com/mirrors/node 镜像（winget 直连 nodejs.org 超时）；非管理员跑 msiexec 装 per-machine MSI 报 exit 103。
