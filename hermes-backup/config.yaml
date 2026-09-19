@@ -6,3 +6,5 @@ providers:
 curator:
   backup:
     enabled: false
+agent:
+  reasoning_effort: high
