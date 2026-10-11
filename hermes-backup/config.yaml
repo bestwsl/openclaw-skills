@@ -8,3 +8,6 @@ curator:
     enabled: false
 agent:
   reasoning_effort: high
+onboarding:
+  seen:
+    busy_input_prompt: true
