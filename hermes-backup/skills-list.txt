@@ -59,6 +59,7 @@ note-taking/obsidian
 productivity/airtable
 productivity/docx
 productivity/google-workspace
+productivity/life-decision-guide
 productivity/maps
 productivity/nano-pdf
 productivity/notion
