@@ -12,6 +12,6 @@ Hermes cron 约束：script 必须放在 ~/.hermes/scripts/ 下并用相对文�
 §
 WorkBuddy 沙箱：从 Hermes 启动的进程无法向用户级 GUI 应用注入键鼠（Windows UIPI 拦 SendKeys/PostMessage/SendInput/keybd_event/VBScript），桌面自动化需 computer-use(cua-driver) 或用户手动操作。网易云音乐在 D:\app\CloudMusic\cloudmusic.exe（窗口类 OrpheusBrowserHost），圭哥常让播"我喜欢的音乐"歌单。
 §
-圭哥明确要求：个股分析必须核查最新季度数据（Q1/中报），不能只看滞后年报。2026年曾因只看2025年报推荐了2026Q1已净利转负的股票（映翰通-58%、福耀-16%）被纠正。规则已固化到 a-share-data-api skill。
-§
 本机 Node 只有系统版 v20.11.0（Program Files\nodejs）。注意：Windows 系统 PATH 优先于用户 PATH，往用户 PATH 加新版 node 盖不住系统旧版——免管理员升级招：把新版 node.exe 复制到 AppData\Roaming\npm\，npm 生成的 .cmd shim 用 %dp0%\node.exe、bash shim 用 $basedir/node，都优先它。大陆网络装 Node 用 npmmirror.com/mirrors/node 镜像（winget 直连 nodejs.org 超时）；非管理员跑 msiexec 装 per-machine MSI 报 exit 103。
+§
+book-to-skill 工具已装到 D:\Hermes\skills\productivity\book-to-skill（书/文档自动转 agent skill，替代手动提炼）。提取 epub/docx/pdf 的 pip 依赖未装；跑 extract.py 用 venv python D:/Hermes/hermes-agent/.venv/Scripts/python.exe（系统 python 是 Windows 商店 stub，exit 49）。
