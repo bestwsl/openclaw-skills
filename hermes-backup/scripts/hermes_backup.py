@@ -70,37 +70,46 @@ def collect_files(tmp_dir):
     return files
 
 
-def api_request(method, url, token, body=None):
-    req = urllib.request.Request(url, method=method)
-    req.add_header("Authorization", f"token {token}")
-    req.add_header("Accept", "application/vnd.github+json")
-    req.add_header("User-Agent", "hermes-backup")
-    data = json.dumps(body).encode() if body is not None else None
-    try:
-        with urllib.request.urlopen(req, data=data, timeout=30) as resp:
-            return resp.status, json.loads(resp.read().decode())
-    except urllib.error.HTTPError as e:
-        return e.code, json.loads(e.read().decode())
+def api_request(method, url, token, body=None, retries=3):
+    for attempt in range(retries):
+        req = urllib.request.Request(url, method=method)
+        req.add_header("Authorization", f"token {token}")
+        req.add_header("Accept", "application/vnd.github+json")
+        req.add_header("User-Agent", "hermes-backup")
+        data = json.dumps(body).encode() if body is not None else None
+        try:
+            with urllib.request.urlopen(req, data=data, timeout=30) as resp:
+                return resp.status, json.loads(resp.read().decode())
+        except urllib.error.HTTPError as e:
+            return e.code, json.loads(e.read().decode())
+        except Exception as e:
+            if attempt < retries - 1:
+                time.sleep(2 * (attempt + 1))  # 网络抖动退避重试 2s/4s
+                continue
+            raise
 
 
 def push_file(token, local_path, repo_path):
     """通过 API 上传/更新单个文件。返回 (ok, detail)。"""
-    with open(local_path, "rb") as f:
-        content_b64 = base64.b64encode(f.read()).decode()
-    # 获取远程现有 sha
-    sha = None
-    status, data = api_request("GET", f"{API}/repos/{REPO}/contents/{repo_path}?ref={BRANCH}", token)
-    if status == 200:
-        sha = data.get("sha")
-    body = {
-        "message": f"🔄 Hermes 记忆备份 {time.strftime('%Y-%m-%d %H:%M')}",
-        "content": content_b64,
-        "branch": BRANCH,
-    }
-    if sha:
-        body["sha"] = sha
-    status, data = api_request("PUT", f"{API}/repos/{REPO}/contents/{repo_path}", token, body)
-    return status in (200, 201), f"{repo_path} -> {status}"
+    try:
+        with open(local_path, "rb") as f:
+            content_b64 = base64.b64encode(f.read()).decode()
+        # 获取远程现有 sha
+        sha = None
+        status, data = api_request("GET", f"{API}/repos/{REPO}/contents/{repo_path}?ref={BRANCH}", token)
+        if status == 200:
+            sha = data.get("sha")
+        body = {
+            "message": f"🔄 Hermes 记忆备份 {time.strftime('%Y-%m-%d %H:%M')}",
+            "content": content_b64,
+            "branch": BRANCH,
+        }
+        if sha:
+            body["sha"] = sha
+        status, data = api_request("PUT", f"{API}/repos/{REPO}/contents/{repo_path}", token, body)
+        return status in (200, 201), f"{repo_path} -> {status}"
+    except Exception as e:
+        return False, f"{repo_path} -> 异常: {type(e).__name__}: {e}"
 
 
 def main():
