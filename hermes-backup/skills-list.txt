@@ -57,8 +57,10 @@ mlops/inference/serving-llms-vllm
 mlops/supertonic-tts
 note-taking/obsidian
 productivity/airtable
+productivity/book-to-skill
 productivity/docx
 productivity/google-workspace
+productivity/image-ocr
 productivity/life-decision-guide
 productivity/maps
 productivity/nano-pdf
