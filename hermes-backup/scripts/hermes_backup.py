@@ -10,6 +10,7 @@ import json
 import os
 import shutil
 import sys
+import tempfile
 import time
 import urllib.error
 import urllib.request
@@ -17,7 +18,6 @@ import urllib.request
 REPO = "bestwsl/openclaw-skills"
 BRANCH = "main"
 HERMES_HOME = os.environ.get("HERMES_HOME", r"D:\Hermes")
-BACKUP_DIR = os.path.join(HERMES_HOME, "memories", "openclaw-skills", "hermes-backup")
 SCRIPTS_DIR = os.path.join(HERMES_HOME, "scripts")
 TOKEN_FILE = os.path.join(SCRIPTS_DIR, "github_token.txt")
 API = "https://api.github.com"
@@ -37,33 +37,36 @@ def get_token():
     return token
 
 
-def collect_files():
-    """构建待备份文件清单：本地复制进 BACKUP_DIR。"""
-    os.makedirs(BACKUP_DIR, exist_ok=True)
+def collect_files(tmp_dir):
+    """构建待备份文件清单：复制到临时目录。返回所有待上传文件的 (full_path, repo_path) 列表。"""
     # 1) 核心记忆文件
     for src, rel in SOURCES:
         if os.path.exists(src):
-            shutil.copy2(src, os.path.join(BACKUP_DIR, os.path.basename(rel)))
+            shutil.copy2(src, os.path.join(tmp_dir, os.path.basename(rel)))
     # 2) skills 清单
     skills_list = []
-    for root, dirs, files in os.walk(os.path.join(HERMES_HOME, "skills")):
-        if "SKILL.md" in files:
-            rel = os.path.relpath(root, os.path.join(HERMES_HOME, "skills"))
-            skills_list.append(rel.replace("\\", "/"))
-    with open(os.path.join(BACKUP_DIR, "skills-list.txt"), "w", encoding="utf-8") as f:
+    skills_root = os.path.join(HERMES_HOME, "skills")
+    if os.path.isdir(skills_root):
+        for root, dirs, files in os.walk(skills_root):
+            if "SKILL.md" in files:
+                rel = os.path.relpath(root, skills_root)
+                skills_list.append(rel.replace("\\", "/"))
+    with open(os.path.join(tmp_dir, "skills-list.txt"), "w", encoding="utf-8") as f:
         f.write("\n".join(sorted(skills_list)))
-    # 3) 追踪脚本
-    shutil.copytree(SCRIPTS_DIR, os.path.join(BACKUP_DIR, "scripts"), dirs_exist_ok=True)
+    # 3) 追踪脚本（排除敏感文件：token/密钥，绝不能推送到公开仓库）
+    if os.path.isdir(SCRIPTS_DIR):
+        shutil.copytree(SCRIPTS_DIR, os.path.join(tmp_dir, "scripts"), dirs_exist_ok=True,
+                        ignore=shutil.ignore_patterns('github_token.txt', '*.token', '*.key', '*.pem', '*.env', '.env'))
     # 4) 备份时间戳
-    with open(os.path.join(BACKUP_DIR, "last-backup.txt"), "w", encoding="utf-8") as f:
+    with open(os.path.join(tmp_dir, "last-backup.txt"), "w", encoding="utf-8") as f:
         f.write(time.strftime("%Y-%m-%d %H:%M:%S %Z"))
     # 返回所有待上传文件
     files = []
-    for root, dirs, fnames in os.walk(BACKUP_DIR):
+    for root, dirs, fnames in os.walk(tmp_dir):
         for fn in fnames:
             full = os.path.join(root, fn)
-            rel = os.path.relpath(full, os.path.join(HERMES_HOME, "memories", "openclaw-skills")).replace("\\", "/")
-            files.append((full, rel))
+            rel = os.path.relpath(full, tmp_dir).replace("\\", "/")
+            files.append((full, f"hermes-backup/{rel}"))
     return files
 
 
@@ -105,15 +108,22 @@ def main():
     if not token:
         print("❌ 未找到 GitHub PAT token：请设置环境变量 GITHUB_PAT 或写入 D:\\Hermes\\scripts\\github_token.txt")
         sys.exit(1)
-    files = collect_files()
-    results = [push_file(token, local, rel) for local, rel in files]
-    ok = sum(1 for r in results if r[0])
-    print(f"✅ 备份完成：{ok}/{len(files)} 个文件已推送到 {REPO}")
-    for ok_flag, detail in results:
-        if not ok_flag:
-            print(f"   ⚠️ 失败: {detail}")
-    if ok < len(files):
-        sys.exit(1)
+    tmp_dir = tempfile.mkdtemp(prefix="hermes_backup_")
+    try:
+        files = collect_files(tmp_dir)
+        if not files:
+            print("⚠️ 没有找到可备份的文件")
+            return
+        results = [push_file(token, local, rel) for local, rel in files]
+        ok = sum(1 for r in results if r[0])
+        print(f"✅ 备份完成：{ok}/{len(files)} 个文件已推送到 {REPO}")
+        for ok_flag, detail in results:
+            if not ok_flag:
+                print(f"   ⚠️ 失败: {detail}")
+        if ok < len(files):
+            sys.exit(1)
+    finally:
+        shutil.rmtree(tmp_dir, ignore_errors=True)
 
 
 if __name__ == "__main__":
