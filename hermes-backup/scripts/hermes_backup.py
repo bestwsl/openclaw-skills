@@ -125,12 +125,15 @@ def main():
             return
         results = [push_file(token, local, rel) for local, rel in files]
         ok = sum(1 for r in results if r[0])
-        print(f"✅ 备份完成：{ok}/{len(files)} 个文件已推送到 {REPO}")
-        for ok_flag, detail in results:
-            if not ok_flag:
-                print(f"   ⚠️ 失败: {detail}")
         if ok < len(files):
+            # 有失败才输出错误，exit 1 触发错误通知
+            print(f"❌ 备份失败：{ok}/{len(files)} 个文件成功")
+            for ok_flag, detail in results:
+                if not ok_flag:
+                    print(f"   ⚠️ {detail}")
             sys.exit(1)
+        # 成功时保持静默：no_agent 模式下空 stdout 不投递，
+        # 避免每天往微信发"备份成功"导致限流、也符合不打扰的偏好
     finally:
         shutil.rmtree(tmp_dir, ignore_errors=True)
 
