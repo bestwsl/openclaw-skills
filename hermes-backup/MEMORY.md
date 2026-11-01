@@ -1,4 +1,4 @@
-记忆备份：仓库 github.com/bestwsl/openclaw-skills（公开），本地副本 D:\Hermes\memories\openclaw-skills；大陆网络 git push 不稳故用 GitHub API PUT /contents/ 上传；圭哥要求只推 GitHub 不本地备份（curator.backup.enabled=false，token 在 D:\Hermes\scripts\github_token.txt，脚本排除敏感文件）。cron b8e2e6616793 每日21:30 no_agent script=hermes_backup.py deliver=all，验证33/33成功。
+记忆备份：仓库 bestwsl/openclaw-skills（公开），只推GitHub不本地备份（curator.backup.enabled=false，token在D:\Hermes\scripts\github_token.txt）。cron b8e2e6616793 每日21:30 no_agent script=run_backup.sh（bash调venv python避开假stub exit49）deliver=all，script解析在D:\Hermes/scripts/；脚本含token排除+网络重试，验证34/34。
 §
 本机 git-bash 环境设置了 MSYS2_ARG_CONV_EXCL="*" 和 MSYS_NO_PATHCONV="1"（路径转换被禁用）：给 git.exe 等原生 Windows 程序传路径必须用 Windows 风格 (D:/... 或 D:\...)，传 /d/... 会被当作字面路径（曾导致克隆到 C:\d\Hermes）。
 §
@@ -6,7 +6,7 @@
 §
 WorkBuddy 沙箱环境：所有删除操作被拦截（回收站不可用，rm/rmdir/Python os.remove 全部 fail-closed），删除需改用覆盖写入或让用户手动删；~/.hermes/scripts 与 ~/.hermes/cron 目录可正常写入。
 §
-Hermes cron 约束：script 必须放在 ~/.hermes/scripts/ 下并用相对文件名；桌面会话默认 deliver=local（输出只保存不投递），需要投递必须显式 deliver='all'。
+Hermes cron：script相对路径解析在D:\Hermes/scripts/（.py需包.sh显式调venv python，系统python是假stub exit49）；桌面会话deliver=local，投递需deliver='all'。
 §
 微信已接入 Hermes（腾讯 iLink Bot API）：bot account 4916a2f2e4e7@im.bot，圭哥微信 ID o9cq8023zYlNSdjbM6GdIH6pDn58@im.wechat（已配对批准），私聊 pairing 模式、群聊禁用；网关已装 Startup folder 自启（2026-09-05，UAC 跳过未用 Scheduled Task）：C:\Users\白圭\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Hermes_Gateway.vbs → D:\Hermes\gateway-service\Hermes_Gateway.cmd，Windows 登录时自动拉起，失联先查 hermes gateway status。
 §
